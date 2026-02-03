@@ -1,0 +1,20 @@
+#!/bin/bash
+
+if [ $# -eq 0 ]; then
+    echo "No arguments supplied"
+else
+    for arg in "$@"
+    do
+        mkdir "ex$arg"
+    done
+fi
+
+#terminal
+$ cd ex05
+chmod +x build.sh
+./build.sh 00 01 02
+$ ./build.sh
+$ ./build.sh 00
+$ ls -l
+$ ./build.sh 01 02 03 04
+$ ls -l
