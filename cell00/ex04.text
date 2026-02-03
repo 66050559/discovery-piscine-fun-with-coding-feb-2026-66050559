@@ -1,0 +1,24 @@
+mkdir ex04
+cd ex04
+ni argv.sh
+code argv.sh
+#ใส่ code
+  #!/bin/sh
+
+if [ $# -eq 0 ]; then
+    echo "No arguments supplied"
+else
+    i=1
+    for arg in "$@"
+    do
+        if [ $i -le 3 ]; then
+            echo "$arg"
+        fi
+        i=$((i + 1))
+    done
+fi
+#save แล้วรันใน terminal
+chmod +x argv.sh
+./argv.sh 42
+./argv.sh 2 40 42
+./argv.sh Hello World ! 42
