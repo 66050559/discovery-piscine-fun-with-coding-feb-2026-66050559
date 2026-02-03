@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercice 03</title>
+</head>
+<body>
+
+    <h1>Piscine Web</h1>
+
+    <a href="https://www.youtube.com/watch?v=INscMGmhmX4">
+        <img src="https://i.pinimg.com/originals/c1/61/c8/c161c8eb9755205f66a499c50d807ead.jpg" alt="The best lolcat" width="400">
+    </a>
+
+    <img src="https://tse3.mm.bing.net/th/id/OIP.W0HxOqJYYEckPvscDYqL5AHaG0?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Programmers reviewing code" width="400">
+
+</body>
+</html>
