@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <style>
+        body {
+            background-color: pink; /* โจทย์: พื้นหลังสีชมพู */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: white; /* โจทย์: หัวข้อสีขาว */
+            text-align: center; /* โจทย์: กึ่งกลาง */
+            font-size: 3em;
+            margin-top: 50px;
+        }
+
+        .shop-container {
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .shop-item img {
+            width: 200px; 
+            height: auto;
+            transition: transform 0.2s; /* เพิ่มลูกเล่นเวลาเอาเมาส์วาง */
+        }
+
+        .shop-item img:hover {
+            transform: scale(1.05); /* รูปขยายขึ้นนิดหน่อยเวลาชี้ */
+        }
+
+        .shop-item a {
+            color: white;
+            text-decoration: underline;
+            display: block;
+            margin-top: 10px;
+        }
+
+        hr {
+            border: 0;
+            border-top: 2px solid white;
+            margin: 40px 0;
+            width: 100%;
+        }
+
+        .footer {
+            text-align: right; /* โจทย์: ชิดขวา */
+            font-style: italic; /* โจทย์: ตัวเอียง */
+            font-family: 'Courier New', Courier, monospace; /* โจทย์: monospace */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to My Shop! !</h1>
+
+    <div class="shop-container">
+        <div class="shop-item">
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon">
+            </a>
+            <a href="https://www.amazon.com" target="_blank">Shop at Amazon</a>
+        </div>
+
+        <div class="shop-item">
+            <a href="https://www.ebay.com" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay">
+            </a>
+            <a href="https://www.ebay.com" target="_blank">Shop at eBay</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="footer">
+        © wil 2026
+    </div>
+
+</body>
+</html>
