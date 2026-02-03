@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Piscine Web</title>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Piscine Web</h1>
+    <a href="https://www.youtube.com/watch?v=INscMGmhmX4">
+        <img src="https://blog.wu.ac.th/wp-content/uploads/2023/01/8-768x768.jpg" width="45%">
+    </a>
+    <img src="https://blog.wu.ac.th/wp-content/uploads/2023/01/11.jpg" width="45%">
+
+</body>
+</html>
