@@ -1,0 +1,85 @@
+#css
+/* ตั้งค่าพื้นฐาน */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ตั้งค่าคลาส Parallax */
+.parallax {
+    /* กำหนดให้ภาพพื้นหลังติดอยู่กับที่ */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    /* ความสูงของแต่ละเซกชัน */
+    height: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ใส่รูปภาพที่ 1 */
+.img1 {
+    background-image: url('https://picsum.photos/id/10/1600/900');
+}
+
+/* ใส่รูปภาพที่ 2 */
+.img2 {
+    background-image: url('https://picsum.photos/id/20/1600/900');
+}
+
+/* สไตล์ของบล็อกสีดำ */
+.black-section {
+    background-color: #000;
+    color: #fff;
+    padding: 100px 50px;
+    text-align: center;
+}
+
+/* สไตล์ข้อความกลางภาพ */
+.caption {
+    text-align: center;
+}
+
+.caption span.border {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Exercise</title>
+    <link rel="stylesheet" href="parallax.css">
+</head>
+<body>
+
+    <div class="parallax img1">
+        <div class="caption">
+            <span class="border">ยินดีต้อนรับสู่หน้าเว็บ</span>
+        </div>
+    </div>
+
+    <div class="black-section">
+        <h3>ข้อความในบล็อกสีดำ</h3>
+        <p>นี่คือส่วนของเนื้อหาที่เลื่อนทับรูปภาพ เพื่อสร้างเอฟเฟกต์ Parallax</p>
+    </div>
+
+    <div class="parallax img2">
+        <div class="caption">
+            <span class="border">สิ้นสุดการเดินทาง</span>
+        </div>
+    </div>
+
+</body>
+</html>
