@@ -1,0 +1,65 @@
+#css
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 50px auto;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+}
+
+
+
+
+#html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="card.css">
+</head>
+<body>
+
+<h1>My Profile</h1>
+
+<table>
+<tr>
+<td align="center">
+    <img src="c:\Users\HP\Pictures\LINE_ALBUM_122568 BE_260205_1.jpg" class="avatar">
+    <h2>kmeksiri</h2>
+    <p>Web student</p>
+
+    <div class="social">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png">
+    </div>
+
+    <a href="https://www.instagram.com/_meksiri.swag_/">
+    <button>Contact</button>
+    </a>
+</td>
+</tr>
+</table>
+
+</body>
+</html>
