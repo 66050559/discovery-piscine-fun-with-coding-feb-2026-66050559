@@ -1,0 +1,138 @@
+#index.html ---------------------------------------------------------------------------
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern To-Do List</title>
+    <style>
+        body {
+            font-family: 'Prompt', sans-serif;
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+            height: 100vh;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 350px;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        h1 { text-align: center; color: #333; }
+        .btn-new {
+            width: 100%;
+            padding: 12px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: 0.3s;
+        }
+        .btn-new:hover { background: #0056b3; }
+        #ft_list div {
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            border-left: 5px solid #007bff;
+            transition: 0.2s;
+        }
+        #ft_list div:hover {
+            background: #fff5f5;
+            border-left-color: #ff4757;
+            color: #ff4757;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 To Do List</h1>
+    <button class="btn-new" onclick="newTodo()">+ New Task</button>
+    <div id="ft_list"></div>
+</div>
+
+<script src="todo.js"></script>
+</body>
+</html>
+
+#todo.js ---------------------------------------------------------------------------
+
+// --- ส่วนจัดการ Cookie และ JSON ---
+
+function setCookie(name, value, days = 7) {
+    const date = new Date();
+    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+    const expires = "; expires=" + date.toUTCString();
+    // แปลงข้อมูลเป็น JSON String ก่อนบันทึก
+    document.cookie = name + "=" + encodeURIComponent(value) + expires + "; path=/";
+}
+
+function getCookie(name) {
+    let cookies = document.cookie.split("; ");
+    for (let c of cookies) {
+        let [key, val] = c.split("=");
+        if (key === name) return decodeURIComponent(val);
+    }
+    return "";
+}
+
+// ฟังก์ชันดึงข้อมูลจากหน้าเว็บมาแปลงเป็น JSON เพื่อบันทึก
+function saveTodos() {
+    const list = [];
+    document.querySelectorAll("#ft_list div").forEach(d => {
+        list.push(d.textContent);
+    });
+    // ใช้ JSON.stringify เพื่อแปลง Array เป็น String
+    setCookie("todos", JSON.stringify(list));
+}
+
+// --- ส่วนจัดการหน้าจอ (UI) ---
+
+function addTodo(text, isInitialLoad = false) {
+    let div = document.createElement("div");
+    div.textContent = text;
+
+    div.onclick = function () {
+        if (confirm("ต้องการลบรายการนี้ใช่หรือไม่?")) {
+            div.remove();
+            saveTodos();
+        }
+    };
+
+    let list = document.getElementById("ft_list");
+    list.prepend(div);
+
+    if (!isInitialLoad) {
+        saveTodos();
+    }
+}
+
+function newTodo() {
+    let text = prompt("เพิ่มรายการใหม่:");
+    if (text && text.trim() !== "") {
+        addTodo(text.trim());
+    }
+}
+
+// เมื่อโหลดหน้าเว็บ ให้ดึง JSON จาก Cookie มา Parse กลับเป็น Array
+window.onload = function () {
+    let data = getCookie("todos");
+    if (data) {
+        try {
+            // ใช้ JSON.parse เพื่อแปลงข้อความกลับเป็น Array ของ JavaScript
+            let todoArray = JSON.parse(data);
+            todoArray.reverse().forEach(t => addTodo(t, true));
+        } catch (e) {
+            console.error("เกิดข้อผิดพลาดในการอ่านข้อมูล JSON", e);
+        }
+    }
+};
