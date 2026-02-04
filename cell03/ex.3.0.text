@@ -1,0 +1,46 @@
+#css
+body {
+    text-align: center;
+    padding-top: 100px;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.4s;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #525151;
+}
+
+
+#html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Change background</title>
+    <link rel="stylesheet" href="backgroound.css">
+</head>
+<body>
+
+<button onclick="changeColor()">Click me!</button>
+
+<script src="backgroound.js"></script>
+</body>
+</html>
+
+
+
+
+#json
+function changeColor() {
+    var color = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = color;
+}
