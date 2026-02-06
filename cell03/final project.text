@@ -1,0 +1,617 @@
+# index.html ----------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Mitr:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</div>
+
+    <div class="main-wrapper">
+        <h1 class="title">Welcome to Our Portfolio</h1>
+        <p class="subtitle">Choose a profile to view</p>
+        
+        <div class="profile-container">
+            <a href="portfolio-a.html" class="profile-item">
+                <div class="avatar-wrapper boy">
+                    <img src="c:\Users\HP\Pictures\S__31260703.jpg" alt="User A">
+                </div>
+                <h3>Nipatchaya Naleam</h3>
+            </a>
+
+            <a href="portfolio-b.html" class="profile-item">
+                <div class="avatar-wrapper girl">
+                    <img src="c:\Users\HP\Pictures\92684_0.jpg" alt="User B">
+                </div>
+                <h3>Kittiphong Meksiri</h3>
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
+
+# portfolio-a.html ----------------------------------------------------------------------------------
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nipatchaya's Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="portfolio-style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">My Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <div class="container">
+        <header class="profile-header">
+            <div class="header-img">
+                <img src="c:\Users\HP\Pictures\S__31260703.jpg" alt="Nipatchaya">
+            </div>
+            <h1>Nipatchaya Naleam</h1>
+            <p class="bio">ณิภัชญา นาแหลม อายุ 21 ปี</p>
+            <p class="bio">กำลังศึกษาอยู่ที่เทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+        </header>
+
+        <hr class="divider">
+
+        <section class="skills">
+            <section class="skills" id="skills-section">
+            <h2><i class="fas fa-star"></i> My Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">Graphic Design</div>
+                <div class="skill-card">Web Development</div>
+                <div class="skill-card">Video Editing</div>
+                <div class="skill-card">Communication</div>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <section class="contact" id="contact-section"></section>
+            <h2><i class="fas fa-images"></i> Activities & Projects</h2>
+            <div class="image-grid">
+                <div class="gallery-item"><img src="c:\Users\HP\Pictures\S__31260705.jpg" alt="Work 1"><p>กิจกรรมรับน้องคณะวิทยาศาสตร์ สาขาวิชาสถิติประยุกต์และการวิเคราะห์ข้อมูล</p></div>
+                <div class="gallery-item"><img src="c:\Users\HP\Pictures\92740.jpg" alt="Work 2"><p>กิจกรรมรับน้องคณะวิทยาศาสตร์ ปี2568</p></div>
+                <div class="gallery-item"><img src="c:\Users\HP\Pictures\S__31260708.jpg" alt="Work 3"><p>กิจกรรมเป็นสต๊าฟ งานกีฬาวิดย๊า...วิดยา ครั้งที่ 17 ของภาควิชาสถิติประยุกต์และการวิเคราะห์ข้อมูล</p></div>
+            </div>
+        </section>
+
+        <section class="contact">
+    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <div class="contact-links">
+        <a href="https://web.facebook.com/nipatchaya.nalaem" target="_blank" class="contact-item fb">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/nipxtchx/" target="_blank" class="contact-item ig">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://line.me/ti/p/p_npcy" target="_blank" class="contact-item line">
+            <i class="fab fa-line"></i> Line ID
+        </a>
+
+        <a href="tel:065-493-2160" class="contact-item tel">
+            <i class="fas fa-phone"></i> 065-493-2160
+        </a>
+    </div>
+</section>
+    </div>
+
+    <footer>
+        <p>© 2026 Nipatchaya Naleam. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+
+# portfolio-b.html ----------------------------------------------------------------------------------
+
+    <!DOCTYPE html>
+    <html lang="th">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kittiphong's Portfolio</title>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="portfolio-style.css">
+    </head>
+    <body>
+
+    <nav class="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="nav-logo">My Portfolio</a>
+        <ul class="nav-links">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#skills-section">Skills</a></li>
+            <li><a href="#contact-section">Contact Me</a></li>
+        </ul>
+    </div>
+</nav>
+
+        <div class="container">
+            <header class="profile-header">
+                <div class="header-img">
+                    <img src="c:\Users\HP\Pictures\92684_0.jpg" alt="Kittiphong">
+                </div>
+                <h1>Kittiphong Meksiri</h1>
+                <p class="bio">กิตติพงษ์ เมฆศิริ อายุ 21 ปี</p>
+                <p class="bio">กำลังศึกษาอยู่ที่เทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</p>
+            </header>
+
+            <hr class="divider">
+
+            <section class="skills">
+                <section class="skills" id="skills-section"></section>
+                <section class="skills" id="skills-section"></section>
+                <h2><i class="fas fa-star"></i> My Skills & Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">Photographer</div>
+                    <div class="skill-card">Digital Art</div>
+                    <div class="skill-card">Video Editing</div>
+                    <div class="skill-card">Graphic Design</div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <section class="contact" id="contact-section"></section>
+                <h2><i class="fas fa-images"></i> Activities & Projects</h2>
+                <div class="image-grid">
+                    <div class="gallery-item"><img src="c:\Users\HP\Pictures\92686.jpg" alt="Work 1"><p>กิจกรรมรับน้องคณะวิทยาศาสตร์ ปี2568</p></div>
+                    <div class="gallery-item"><img src="c:\Users\HP\Pictures\DSC02240.jpg" alt="Work 2"><p>กิจกรรมงานสารสัมพันธ์สจล. และ จุฬาฯ</p></div>
+                    <div class="gallery-item"><img src="c:\Users\HP\Pictures\92744.jpg" alt="Work 3"><p>กิจกรรมเป็นสต๊าฟ งานกีฬาวิดย๊า...วิดยา ครั้งที่ 18 ของภาควิชาสถิติประยุกต์และการวิเคราะห์ข้อมูล</p></div>
+                </div>
+            </section>
+
+        <section class="contact">
+    <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+    <div class="contact-links">
+        <a href="https://web.facebook.com/thx3691" target="_blank" class="contact-item fb">
+            <i class="fab fa-facebook"></i> Facebook
+        </a>
+
+        <a href="https://www.instagram.com/_meksiri.swag_/" target="_blank" class="contact-item ig">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+
+        <a href="https://line.me/ti/p/thankyou5" target="_blank" class="contact-item line">
+            <i class="fab fa-line"></i> Line ID
+        </a>
+
+        <a href="tel:062-616-1453" class="contact-item tel">
+            <i class="fas fa-phone"></i> 062-616-1453
+        </a>
+    </div>
+</section>
+    </div>
+
+        <footer>
+            <p>© 2026 Kittiphong Meksiri. All Rights Reserved.</p>
+        </footer>
+
+    </body>
+    </html>
+
+# portfolio-style.css ----------------------------------------------------------------------------------
+
+/* --- 1. ตั้งค่าพื้นฐานและการเลื่อนหน้าจอ --- */
+html {
+    scroll-behavior: smooth; /* ทำให้หน้าจอเลื่อนแบบนุ่มนวล */
+}
+
+:root {
+    --primary-color: #ff9a9e;
+    --bg-color: #fcfcfc;
+    --text-color: #444;
+}
+
+body {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding-top: 100px; /* เว้นที่ให้ Navbar */
+}
+
+/* --- 2. Navbar สไตล์ใหม่ (Anchor Menu) --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5d5d5d;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+/* --- 3. ส่วนเนื้อหาและหัวข้อ --- */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    scroll-margin-top: 120px; /* ป้องกัน Navbar บังหัวข้อตอนเลื่อนลงมา */
+    margin-bottom: 40px;
+}
+
+.profile-header {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.header-img {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.header-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bio {
+    font-style: italic;
+    color: #888;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 40px 0;
+}
+
+/* --- 4. Skills Grid --- */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.skill-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+    border-bottom: 3px solid var(--primary-color);
+}
+
+/* --- 5. Gallery Grid --- */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-item p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* --- 6. Contact Links --- */
+.contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact-item {
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.fb { background: #1877f2; }
+.ig { background: #e1306c; }
+.line { background: #00c300; }
+.tel { background: #555; }
+
+.contact-item:hover { opacity: 0.8; transform: translateY(-3px); }
+
+footer {
+    text-align: center;
+    padding: 40px 0;
+    font-size: 0.8rem;
+    color: #aaa;
+}
+
+# style.css ----------------------------------------------------------------------------------
+
+/* 1. กำหนดค่าตัวแปร (Variables) */
+:root {
+    --primary-color: #ff9a9e;    /* สีชมพูหลัก */
+    --bg-color: #fcfcfc;         /* สีพื้นหลังขาวนวล */
+    --text-color: #5d5d5d;       /* สีตัวอักษร */
+    --accent-color: #a1887f;     /* สีรอง */
+}
+
+/* 2. ตั้งค่าพื้นฐานและพื้นหลัง */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+    /* ลายจุด (Polka dots) จางๆ ให้ดูน่ารัก */
+    background-image: radial-gradient(#ffe9e9 1.5px, transparent 1.5px);
+    background-size: 25px 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden; /* ป้องกันการเลื่อนหน้าจอเกินจำเป็น */
+}
+
+/* 3. กล่องหลัก (Card Wrapper) */
+.main-wrapper {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85); /* ขาวโปร่งแสง */
+    backdrop-filter: blur(12px);           /* เอฟเฟกต์กระจกฝ้า */
+    padding: 3.5rem;
+    border-radius: 45px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+    animation: fadeIn 1s ease-out;         /* อนิเมชันตอนเปิดหน้า */
+}
+
+/* 4. หัวข้อและข้อความ */
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-bottom: 3.5rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+/* 5. ส่วนจัดการโปรไฟล์ */
+.profile-container {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+}
+
+.profile-item {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 6. วงกลมล้อมรอบรูปภาพ */
+.avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 8px; /* เว้นระยะขอบสีขาว */
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #fff;
+    transition: all 0.3s ease;
+}
+
+/* 7. จัดการรูปภาพ (แก้รูปเบี้ยวที่นี่) */
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;       /* ล็อกสัดส่วนภาพ ไม่ให้เบี้ยว */
+    object-position: center;  /* จัดให้อยู่กลางวงกลม */
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.profile-item h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* 8. เอฟเฟกต์เมื่อ Hover (เอาเมาส์วาง) */
+.profile-item:hover {
+    transform: translateY(-15px); /* ลอยขึ้น */
+}
+
+.profile-item:hover .avatar-wrapper {
+    box-shadow: 0 15px 35px rgba(255, 154, 158, 0.4);
+    border-color: var(--primary-color);
+}
+
+.profile-item:hover img {
+    transform: scale(1.1); /* ซูมรูปภาพเล็กน้อย */
+}
+
+.profile-item:hover h3 {
+    color: var(--primary-color);
+}
+
+/* 9. อนิเมชัน Fade In */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* 10. Responsive (รองรับมือถือ) */
+@media (max-width: 650px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .main-wrapper {
+        width: 85%;
+        padding: 2.5rem 1.5rem;
+    }
+    .avatar-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}/* --- Navigation Bar Style --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* เอฟเฟกต์กระจกฝ้า */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ff9a9e;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5d5d5d;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff9a9e;
+}
+
+/* ปรับระยะห่างของเนื้อหาไม่ให้โดน Navbar ทับ */
+body {
+    padding-top: 80px; 
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        font-size: 0.85rem;
+        gap: 10px;
+    }
+}
