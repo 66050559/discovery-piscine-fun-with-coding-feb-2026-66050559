@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Calculator</title>
+    <style>
+        /* สไตล์พื้นฐาน */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* กล่องเครื่องคิดเลข */
+        .calculator-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h2 { color: #333; margin-bottom: 1.5rem; }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1.5rem;
+            justify-content: center;
+        }
+
+        input[type="text"], select {
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: border-color 0.3s;
+            font-size: 16px;
+        }
+
+        input[type="text"] { width: 80px; }
+
+        input[type="text"]:focus, select:focus {
+            border-color: #007bff;
+        }
+
+        /* ปุ่มกด */
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            width: 100%;
+            transition: background 0.3s, transform 0.1s;
+        }
+
+        input[type="submit"]:hover { background-color: #0056b3; }
+        input[type="submit"]:active { transform: scale(0.98); }
+
+        /* ส่วนแสดงผลลัพธ์บนจอ */
+        #display-result {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            min-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="calculator-card">
+    <h2>Calculator</h2>
+    
+    <div class="input-group">
+        <input type="text" id="left" placeholder="ตัวเลข">
+        
+        <select id="op">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="%">%</option>
+        </select>
+        
+        <input type="text" id="right" placeholder="ตัวเลข">
+    </div>
+
+    <input type="submit" value="Try me!" onclick="calculate()">
+
+    <div id="display-result">ผลลัพธ์จะแสดงที่นี่</div>
+</div>
+
+<script>
+function calculate() {
+    let a = document.getElementById("left").value;
+    let b = document.getElementById("right").value;
+    let op = document.getElementById("op").value;
+    let display = document.getElementById("display-result");
+
+    // ตรวจสอบว่าเป็นตัวเลขบวกเท่านั้นตาม logic เดิมของคุณ
+    if (!/^\d+$/.test(a) || !/^\d+$/.test(b)) {
+        alert("Error :(");
+        display.innerText = "Error :(";
+        return;
+    }
+
+    a = parseInt(a);
+    b = parseInt(b);
+    let result;
+
+    if ((op === "/" || op === "%") && b === 0) {
+        alert("It’s over 9000!");
+        console.log("It’s over 9000!");
+        display.innerText = "It’s over 9000!";
+        return;
+    }
+
+    if (op === "+") result = a + b;
+    else if (op === "-") result = a - b;
+    else if (op === "*") result = a * b;
+    else if (op === "/") result = a / b;
+    else if (op === "%") result = a % b;
+
+    alert(result);
+    console.log(result);
+    display.innerText = "Result: " + result;
+}
+
+// แจ้งเตือนเมื่อไม่ได้ใช้งานนาน 30 วินาที
+setInterval(function () {
+    alert("Please, use me...");
+}, 30000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+/* ล้างค่าขอบพื้นฐานเพื่อให้เต็มหน้าจอจริงๆ */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+table {
+    /* ทำให้ตารางขยายเต็มพื้นที่หน้าจอ */
+    width: 100%;
+    height: 100vh; /* vh คือความสูงเต็มหน้าจอ */
+    
+    /* รวมขอบตารางเข้าด้วยกัน */
+    border-collapse: collapse;
+    table-layout: fixed; /* ช่วยให้การคำนวณขนาดเซลล์คงที่เมื่อหดหน้าจอ */
+}
+
+td {
+    border: 2px solid black;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 2vw; /* ขนาดตัวอักษรจะปรับตามความกว้างหน้าจอ */
+}

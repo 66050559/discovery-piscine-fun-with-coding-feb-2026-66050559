@@ -1,0 +1,27 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 50px auto;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+}
+
+.social img {
+    width: 30px;
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+}

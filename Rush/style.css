@@ -1,0 +1,209 @@
+/* 1. กำหนดค่าตัวแปร (Variables) */
+:root {
+    --primary-color: #ff9a9e;    /* สีชมพูหลัก */
+    --bg-color: #fcfcfc;         /* สีพื้นหลังขาวนวล */
+    --text-color: #5d5d5d;       /* สีตัวอักษร */
+    --accent-color: #a1887f;     /* สีรอง */
+}
+
+/* 2. ตั้งค่าพื้นฐานและพื้นหลัง */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    background-color: var(--bg-color);
+    /* ลายจุด (Polka dots) จางๆ ให้ดูน่ารัก */
+    background-image: radial-gradient(#ffe9e9 1.5px, transparent 1.5px);
+    background-size: 25px 25px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden; /* ป้องกันการเลื่อนหน้าจอเกินจำเป็น */
+}
+
+/* 3. กล่องหลัก (Card Wrapper) */
+.main-wrapper {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.85); /* ขาวโปร่งแสง */
+    backdrop-filter: blur(12px);           /* เอฟเฟกต์กระจกฝ้า */
+    padding: 3.5rem;
+    border-radius: 45px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.06);
+    animation: fadeIn 1s ease-out;         /* อนิเมชันตอนเปิดหน้า */
+}
+
+/* 4. หัวข้อและข้อความ */
+.title {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.subtitle {
+    margin-bottom: 3.5rem;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    letter-spacing: 0.5px;
+}
+
+/* 5. ส่วนจัดการโปรไฟล์ */
+.profile-container {
+    display: flex;
+    gap: 3.5rem;
+    justify-content: center;
+}
+
+.profile-item {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 6. วงกลมล้อมรอบรูปภาพ */
+.avatar-wrapper {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 8px; /* เว้นระยะขอบสีขาว */
+    background: white;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    margin-bottom: 18px;
+    position: relative;
+    overflow: hidden;
+    border: 4px solid #fff;
+    transition: all 0.3s ease;
+}
+
+/* 7. จัดการรูปภาพ (แก้รูปเบี้ยวที่นี่) */
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;       /* ล็อกสัดส่วนภาพ ไม่ให้เบี้ยว */
+    object-position: center;  /* จัดให้อยู่กลางวงกลม */
+    transition: transform 0.5s ease;
+    display: block;
+}
+
+.profile-item h3 {
+    font-weight: 500;
+    font-size: 1.3rem;
+    margin-top: 10px;
+    transition: color 0.3s ease;
+}
+
+/* 8. เอฟเฟกต์เมื่อ Hover (เอาเมาส์วาง) */
+.profile-item:hover {
+    transform: translateY(-15px); /* ลอยขึ้น */
+}
+
+.profile-item:hover .avatar-wrapper {
+    box-shadow: 0 15px 35px rgba(255, 154, 158, 0.4);
+    border-color: var(--primary-color);
+}
+
+.profile-item:hover img {
+    transform: scale(1.1); /* ซูมรูปภาพเล็กน้อย */
+}
+
+.profile-item:hover h3 {
+    color: var(--primary-color);
+}
+
+/* 9. อนิเมชัน Fade In */
+@keyframes fadeIn {
+    from { 
+        opacity: 0; 
+        transform: translateY(30px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+/* 10. Responsive (รองรับมือถือ) */
+@media (max-width: 650px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    .main-wrapper {
+        width: 85%;
+        padding: 2.5rem 1.5rem;
+    }
+    .avatar-wrapper {
+        width: 140px;
+        height: 140px;
+    }
+    .title {
+        font-size: 2rem;
+    }
+}/* --- Navigation Bar Style --- */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px); /* เอฟเฟกต์กระจกฝ้า */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ff9a9e;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #5d5d5d;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    padding: 5px 10px;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff9a9e;
+}
+
+/* ปรับระยะห่างของเนื้อหาไม่ให้โดน Navbar ทับ */
+body {
+    padding-top: 80px; 
+}
+
+@media (max-width: 600px) {
+    .nav-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .nav-links {
+        font-size: 0.85rem;
+        gap: 10px;
+    }
+}

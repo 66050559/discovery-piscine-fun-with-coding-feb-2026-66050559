@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ex05: Tab</title>
+    <style>
+        /* ตกแต่งตารางให้เห็นชัดเจนเหมือนในรูป */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* ให้เส้นขอบติดกัน */
+            border: 1px solid black;
+        }
+        td {
+            height: 150px; /* กำหนดความสูง */
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: middle; /* จัดข้อความให้อยู่กึ่งกลางแนวตั้ง */
+        }
+        /* กำหนดสีพื้นหลังแยกแต่ละช่อง */
+        .first-cell {
+            background-color: #C2C67F; /* สีเขียวขี้ม้าตามรูป */
+        }
+        .second-cell {
+            background-color: #F8C4B4; /* สีส้มอ่อนตามรูป */
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td class="first-cell">First cell</td>
+            <td class="second-cell">Second cell</td>
+        </tr>
+    </table>
+
+</body>
+</html>

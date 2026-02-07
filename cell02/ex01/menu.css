@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 50px;
+}
+
+/* Navigation Bar */
+.sncf-nav {
+    background-color: #003366; /* SNCF Blue */
+    padding: 0 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.main-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-item {
+    position: relative;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 20px 25px;
+    transition: background 0.3s;
+}
+
+.nav-item a:hover {
+    background-color: #004a99;
+}
+
+/* The "Meat" of the Sandwich: The Dropdown */
+.dropdown-content {
+    display: none; /* Hidden by default */
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    border-radius: 0 0 5px 5px;
+    overflow: hidden;
+}
+
+.dropdown-content li a {
+    color: #333;
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown-content li a:hover {
+    background-color: #f1f1f1;
+    color: #003366;
+}
+
+/* The Magic: Show menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Remove border from last item */
+.dropdown-content li:last-child a {
+    border-bottom: none;
+}
